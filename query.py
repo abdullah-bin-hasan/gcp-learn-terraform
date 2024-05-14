@@ -19,4 +19,5 @@ GROUP BY
 client = bigquery.Client(
     project=qwiklabs-gcp-03-0c132766d7c3,
     credentials=credentials)
+
 print(client.query(query).to_dataframe())
